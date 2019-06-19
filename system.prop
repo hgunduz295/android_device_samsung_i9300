@@ -57,3 +57,85 @@ ro.config.max_starting_bg=4
 
 # Wifi
 wifi.supplicant_scan_interval=240
+
+# BioHazard Sound Mod Configs
+tunnel.decode=false
+lpa.use-stagefright=false
+lpa.releaselock=false
+lpa.decode=false
+
+# Google Assistant
+ro.opa.eligible_device=true
+
+# Increase Quality Of MediaStreaming 
+wifi.supplicant_scan_interval=240		media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-record=false
+
+# Net Speed Tweaks 
+net.tcp.buffersize.default=4096,87380,256960,4096,
+16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163
+84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163
+84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163
+84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163
+84,256960
+
+# Google DNS Tweak 
+net.wlan0.dns1=8.8.8.8
+net.wlan0.dns2=8.8.4.4
+net.pdp0.dns1=8.8.8.8
+net.pdp0.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.eth0.dns1=8.8.8.8
+net.eth0.dns2=8.8.4.4
+net.gprs.dns1=8.8.8.8
+net.gprs.dns2=8.8.4.4
+
+# Cloudflare DNS Tweak 
+#net.wlan0.dns1=1.1.1.1
+#net.wlan0.dns2=1.0.0.1
+#net.pdp0.dns1=1.1.1.1
+#net.pdp0.dns2=1.0.0.1
+#net.ppp0.dns1=1.1.1.1
+#net.ppp0.dns2=1.0.0.1
+#net.eth0.dns1=1.1.1.1
+#net.eth0.dns2=1.0.0.1
+#net.gprs.dns1=1.1.1.1
+#net.gprs.dns2=1.0.0.1
+
+# Media Tweaks
+Increase photo and video quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.jpeg.quality=100
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+ro.media.capture.flash=led
+ro.media.capture.flashMinV=3300000
+ro.media.capture.torchIntensity=65
+ro.media.capture.flashIntensity=70
+
+# Signal Tweaks
+ro.ril.hsxpa=2
+ro.ril.gprsclass=12
+ro.ril.hep=1
+ro.ril.enable.dtm=1
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
+ro.ril.hsdpa.category=10
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.hsupa.category=5
+
+# Improve battery 
+debug.bt.lowspeed=true
+wifi.supplicant_scan_interval=240
+pm.sleep_mode=4
