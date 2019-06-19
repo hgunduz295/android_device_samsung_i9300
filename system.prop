@@ -68,22 +68,18 @@ lpa.decode=false
 ro.opa.eligible_device=true
 
 # Increase Quality Of MediaStreaming 
-wifi.supplicant_scan_interval=240		media.stagefright.enable-meta=true
+wifi.supplicant_scan_interval=240
+media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
 media.stagefright.enable-record=false
 
 # Net Speed Tweaks 
-net.tcp.buffersize.default=4096,87380,256960,4096,
-16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,163
-84,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,163
-84,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,163
-84,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,163
-84,256960
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
 # Google DNS Tweak 
 net.wlan0.dns1=8.8.8.8
@@ -109,8 +105,7 @@ net.gprs.dns2=8.8.4.4
 #net.gprs.dns1=1.1.1.1
 #net.gprs.dns2=1.0.0.1
 
-# Media Tweaks
-Increase photo and video quality
+# Media Tweaks Increase photo and video quality
 ro.media.dec.jpeg.memcap=8000000
 ro.media.enc.hprof.vid.bps=8000000
 ro.media.enc.jpeg.quality=100
